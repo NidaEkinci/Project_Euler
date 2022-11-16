@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+	int s1=1,s2=2,s3=3,t=2;
+	printf("%d,""%d,""%d,",s1,s2,s3);
+	do
+	{
+		s1=s2;
+		s2=s3;
+		s3=s1+s2;
+		if(s3<4000000)
+		{
+			printf("%d,",s3);
+		}
+		if(s3%2==0)
+		{
+			t=t+s3;
+		}
+	}while(s3<=4000000);
+	printf("\nToplam:%d",t);
+}
