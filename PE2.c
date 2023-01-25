@@ -1,21 +1,21 @@
 #include<stdio.h>
 main()
 {
-	int s1=1,s2=2,s3=3,t=2;
-	printf("%d,""%d,""%d,",s1,s2,s3);
+	int number1=1, number2=2, number3=3, sum=2;
+	printf("%d, %d, %d,", number1, number2, number3);
 	do
 	{
-		s1=s2;
-		s2=s3;
-		s3=s1+s2;
-		if(s3<4000000)
+		number1 = number2;
+		number2 = number3;
+		number3 = number1 + number2;
+		if(number3 < 4000000)
 		{
-			printf("%d,",s3);
+			printf("%d,", number3);
 		}
-		if(s3%2==0)
+		if(number3 % 2 == 0)
 		{
-			t=t+s3;
+			sum += number3;
 		}
-	}while(s3<=4000000);
-	printf("\nToplam:%d",t);
+	}while(number3 <= 4000000);
+	printf("\nSum of the terms : %d", sum);
 }
