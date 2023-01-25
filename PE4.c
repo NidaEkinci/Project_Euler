@@ -21,5 +21,5 @@ main()
 			}
 		}
 	}
-	printf ("%d is a polindrome.", max);
+	printf ("%d is a palindrome.", max);
 }
