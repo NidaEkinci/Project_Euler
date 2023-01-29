@@ -18,7 +18,7 @@ main()
 			break;
 		}
 	}
-	printf("EKOK : %llu", smallest_multiple);
+	printf("Smallest multiple from 1 to 20 : %llu", smallest_multiple);
 }
 
 
